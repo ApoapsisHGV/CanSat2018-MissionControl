@@ -22,7 +22,7 @@ void loop(){
     uint8_t len = sizeof(buf);
     if (rfm69.recv(buf, &len))
     {
-      Serial.print("got request: ");
+      Serial.print("Received data: ");
       Serial.println((char*)buf);
     }
     else
