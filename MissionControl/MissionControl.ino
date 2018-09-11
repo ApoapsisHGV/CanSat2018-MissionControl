@@ -15,12 +15,12 @@ void setup(){
 }
 
 void loop(){
-   if (rfm69.available())
+   if (rfm69._radio.available())
   {
     // Should be a message for us now   
     uint8_t buf[RH_RF69_MAX_MESSAGE_LEN];
     uint8_t len = sizeof(buf);
-    if (rfm69.recv(buf, &len))
+    if (rfm69._radio.recv(buf, &len))
     {
       Serial.print("Received data: ");
       Serial.println((char*)buf);
