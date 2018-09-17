@@ -11,4 +11,13 @@
 // SD config
 #define SD_PIN 23
 
+
+#define stepA 47
+#define directionA 49
+#define enableA 45
+
+#define stepB 27
+#define directionB 29
+#define enableB 25
+
 #endif
